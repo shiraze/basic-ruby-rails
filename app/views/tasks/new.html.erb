@@ -1,2 +1,7 @@
-<h1>Tasks#new</h1>
-<p>Find me in app/views/tasks/new.html.erb</p>
+<%= render(partial:'back') %>
+
+<div class="tasks new">
+
+    <%= render(partial:'form', locals: {form:@task, button_text:"Create Task"})  %>
+
+</div>

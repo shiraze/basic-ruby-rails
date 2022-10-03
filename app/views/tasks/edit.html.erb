@@ -1,2 +1,7 @@
-<h1>Tasks#edit</h1>
-<p>Find me in app/views/tasks/edit.html.erb</p>
+<%= render(partial:'back') %>
+
+<div class="tasks edit">
+
+    <%= render(partial:'form', locals: {form:@task, button_text: "Edit Task"})  %>
+
+</div>
