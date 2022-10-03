@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'main/index'
   match 'about', to: 'main#about', via: :get
 
-  resources :cars
 
   resources :categories do
     member do

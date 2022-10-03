@@ -1,5 +1,7 @@
 # README
 
+Going through https://www.linkedin.com/learning/ruby-on-rails-7-essential-training tutorial
+
 Uses mysql. Installed with homebrew, and then started
 
 ```bash
@@ -19,13 +21,22 @@ Updated _database.yml_ to make use of the `DATABASE_URL` environment setting I h
 export DATABASE_URL="mysql2://username:password@localhost"
 ```
 
-Used the following to get a `/cars` end-point with full CRUD capability:
+The following was used to get a `/cars` end-point with full CRUD capability:
 
 ```bash
 rails generate scaffold car make:string model:string year:integer
 rails db:migrate
 ```
 
+And it was then removed with:
+
+```bash
+rails destroy scaffold car
+```
+
+(This was done to compare how scaffolds compare to manually generating models, etc)
+
+<!--
 Things you may want to cover:
 
 - Ruby version
@@ -49,6 +60,11 @@ Things you may want to cover:
 ```
 
 ```
+
+```
+
+```
+-->
 
 ```
 
