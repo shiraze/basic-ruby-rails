@@ -19,6 +19,13 @@ Updated _database.yml_ to make use of the `DATABASE_URL` environment setting I h
 export DATABASE_URL="mysql2://username:password@localhost"
 ```
 
+Used the following to get a `/cars` end-point with full CRUD capability:
+
+```bash
+rails generate scaffold car make:string model:string year:integer
+rails db:migrate
+```
+
 Things you may want to cover:
 
 - Ruby version
@@ -38,6 +45,10 @@ Things you may want to cover:
 - Deployment instructions
 
 - ...
+
+```
+
+```
 
 ```
 
