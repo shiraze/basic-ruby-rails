@@ -1,9 +1,13 @@
 <%= link_to('Home', {controller:'main', action:'index'}) %>
-<h1>Todo Lists</h1>
+<% if @page==1 %>
+    <h1>Todo Lists</h1>
+<% end %>
 
 <ul>
 <% @tasks.each do |task| %>
  <li><%= task %>
 <% end %>
 </ul>
+
+<%= link_to('First Task', task_path(1)) %>
 

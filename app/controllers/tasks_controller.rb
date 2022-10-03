@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   def index
     @tasks = ['Mow lawn', 'wash dishes', 'paint panels']
+    @page = params[:page].to_i
   end
 
   def show; end
