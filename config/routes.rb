@@ -1,16 +1,23 @@
 Rails.application.routes.draw do
-  resources :cars
   root 'main#index'
+
+  resources :cars
+
+  get 'categories/index'
+  get 'categories/show'
+  get 'categories/new'
+  get 'categories/edit'
+  get 'categories/delete'
 
   match 'about', to: 'main#about', via: :get
 
-
   get 'main/index'
+
   get 'tasks/index'
+  get 'tasks/show'
   get 'tasks/new'
   get 'tasks/edit'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'tasks/delete'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 end

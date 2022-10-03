@@ -1,7 +1,5 @@
-class TasksController < ApplicationController
-  def index
-    @tasks = ['Mow lawn', 'wash dishes', 'paint panels']
-  end
+class CategoriesController < ApplicationController
+  def index; end
 
   def show; end
 
